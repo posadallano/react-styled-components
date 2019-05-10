@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { StyledLink } from "./Link";
+import StyledLink from "./Link";
 
 const Brand = styled(StyledLink)`
   margin-right: auto;

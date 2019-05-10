@@ -9,6 +9,7 @@ import PastTrials from './views/PastTrials/index';
 import LogIn from './views/LogIn/index';
 import Search from './views/Search/index';
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 import './normalize.css';
 
@@ -31,6 +32,7 @@ class App extends Component {
           <Route exact path='/howitworks' component={HowItWorks}></Route>
           <Route exact path='/login' component={LogIn}></Route>
           <Route exact path='/search' component={Search}></Route>
+          <Footer />
         </div>
       </Router>
     );

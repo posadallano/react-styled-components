@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { desktop } from "../../utils/media";
 
-import { StyledLink } from "./Link";
+import StyledLink from "./Link";
 
 const MenuButton = styled(StyledLink).attrs({
   height: null,
@@ -18,7 +18,7 @@ const MenuButton = styled(StyledLink).attrs({
 
   &:hover {
     background: none;
-    color: #f2f2f2;
+    color: #000;
   }
 
   ${desktop(css`

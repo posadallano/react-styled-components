@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { desktop, maxTablet } from "../../utils/media";
 
-import { StyledLink } from "./Link";
+import StyledLink from "./Link";
 
 const MenuWrapper = styled.div`
   overflow: hidden;
