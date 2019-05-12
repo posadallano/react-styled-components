@@ -2,8 +2,9 @@ import React from 'react';
 
 import Wrapper from '../../components/Wrapper'
 import Hero from '../../components/Hero';
-import InvitationBanner from '../../components/InvitationBanner';
+import SpeakOutBanner from '../../components/SpeakOutBanner';
 import SubmitBanner from '../../components/Submit';
+import VotingPanel from '../../components/VotingPanel';
 
 function Home (){
     return (
@@ -11,7 +12,8 @@ function Home (){
             <Hero className="main"/>
             <Wrapper>
               <div>
-                <InvitationBanner />
+                <SpeakOutBanner />
+                <VotingPanel />
                 <SubmitBanner />
               </div>  
             </Wrapper>

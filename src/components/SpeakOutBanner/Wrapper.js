@@ -9,7 +9,11 @@ const Container = styled.div`
   grid-row-gap: 20px;
   align-items: center;
   grid-template-areas: 'titles icon' 'description';
-
+  svg {
+    path {
+      fill: #000;
+    }
+  }
   @media (min-width: 600px) {
     grid-template-areas: 'titles description icon';
     grid-row-gap: 0;

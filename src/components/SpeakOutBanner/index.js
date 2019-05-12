@@ -1,14 +1,14 @@
 // @flow
 import React from 'react';
 import { ReactComponent as CloseIcon } from '../../utils/images/home/close.svg';
-import Container from './Container';
+import Wrapper from './Wrapper';
 import Pretitle from './Pretitle';
 import Title from './Title';
 import ContentBanner from './ContentBanner';
 
-function InvitationBanner() {
+function SpeakOutBanner() {
   return (
-    <Container>
+    <Wrapper>
       <div>
         <Pretitle>Speak out. Be heard.</Pretitle>
         <Title>Be counted</Title>
@@ -21,8 +21,8 @@ function InvitationBanner() {
       <div>
         <CloseIcon />
       </div>
-    </Container>
+    </Wrapper>
   );
 }
 
-export default InvitationBanner;
+export default SpeakOutBanner;

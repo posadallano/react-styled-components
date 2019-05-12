@@ -5,6 +5,7 @@ import Menu, { MenuItem } from "./Menu";
 import MobileButton from "./MobileButton";
 import Logo from "./Logo";
 import HeaderContainer from "./Header";
+import { ReactComponent as Search } from '../../utils/images/home/search.svg';
 
 class NavBar extends Component {
   state = {
@@ -26,6 +27,7 @@ class NavBar extends Component {
             <MenuItem href="/pasttrials">Past Trials</MenuItem>
             <MenuItem href="/howitworks">How It Works</MenuItem>
             <MenuItem href="/login">Log In / Sign Up</MenuItem>
+            <MenuItem href="/search"><Search width="20" height="20px" /></MenuItem>
           </Menu>
           <MobileButton onClick={this.onToggleMenu} />
         </Wrapper>
