@@ -27,7 +27,7 @@ class NavBar extends Component {
             <MenuItem href="/pasttrials">Past Trials</MenuItem>
             <MenuItem href="/howitworks">How It Works</MenuItem>
             <MenuItem href="/login">Log In / Sign Up</MenuItem>
-            <MenuItem href="/search"><Search width="20" height="20px" /></MenuItem>
+            <MenuItem href="/search"><Search width="24" height="26px" /></MenuItem>
           </Menu>
           <MobileButton onClick={this.onToggleMenu} />
         </Wrapper>

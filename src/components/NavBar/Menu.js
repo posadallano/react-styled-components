@@ -10,6 +10,7 @@ const MenuWrapper = styled.div`
 
   ${desktop(css`
     display:block;
+    text-align: right;
   `)};
 
   ${props =>
@@ -18,13 +19,14 @@ const MenuWrapper = styled.div`
         css`
         display:block;
         width: 100%;
-        margin-top: 40px;
+        top: 70px;
+        position: absolute;
+        left: 0;
       `
     )};
 `;
-const MenuItem = styled(StyledLink)`
-  float: left;
 
+const MenuItem = styled(StyledLink)`
   ${props =>
     maxTablet(
       props.isHidden ||
@@ -32,12 +34,11 @@ const MenuItem = styled(StyledLink)`
       float: none;
       display:block;
       text-align: left;
-
-      font-size:12px;
       letter-spacing: 1px;
-      color: #333;
-      background-color: #f6f6ef;
-      border-bottom: 1px solid rgba(255,255,255,0.75);
+      border-bottom: 1px solid #fff;
+      font-size: 18px;
+      color: #fff;
+      background-color: #000;
 
       &:active {
         background-color: #e6e6e6;

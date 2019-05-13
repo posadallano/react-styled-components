@@ -1,10 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from "styled-components";
+import { maxTablet } from "../../utils/media";
 import submitbg from '../../utils/images/home/bg-submit.png';
 
 const SubmitContent = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   position: relative;
   height: 80px;
@@ -12,9 +14,17 @@ const SubmitContent = styled.div`
   color: #000;
   margin: 35px 0;
   padding: 0 20px;
+  ${maxTablet(css`
+    height: initial;
+    padding: 20px 10px;
+    text-align: center;
+  `)};
   .cta {
     font-size: 30px;
     font-weight: 300;
+    ${maxTablet(css`
+      padding-bottom: 20px;
+  `)};
   }
   .bgimage {
     background: url(${submitbg});

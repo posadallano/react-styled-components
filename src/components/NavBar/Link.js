@@ -7,13 +7,18 @@ const StyledLink = styled.a`
   color: #fff;
   display: inline-block;
   text-align: center;
-  padding: 20px 25px 12px 25px;
+  padding: 15px 25px 15px 25px;
   text-decoration: none;
 
   ${desktop(css`
     &:hover {
       color: #ccc;
     }`)};
+  
+  &:last-of-type{
+    padding-right: 0;
+    vertical-align: middle;
+  }
 `;
 
 export default StyledLink;

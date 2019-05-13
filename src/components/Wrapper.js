@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from "styled-components";
+import { maxTablet } from "../utils/media";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -16,6 +17,9 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    ${maxTablet(css`
+      height: 70px;
+  `)};
   }
 `;
 

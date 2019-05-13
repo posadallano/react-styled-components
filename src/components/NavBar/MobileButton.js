@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { desktop } from "../../utils/media";
+import { desktop, maxTablet } from "../../utils/media";
 
 import StyledLink from "./Link";
 
@@ -16,13 +16,13 @@ const MenuButton = styled(StyledLink).attrs({
   line-height: 14px;
   cursor: pointer;
 
-  &:hover {
-    background: none;
-    color: #000;
-  }
-
   ${desktop(css`
     display: none;
+  `)};
+  ${maxTablet(css`
+    font-size: 36px;
+    right: 5%;
+    top: 13px;
   `)};
 `;
 

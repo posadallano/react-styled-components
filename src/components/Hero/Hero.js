@@ -1,10 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { desktop, maxTablet } from "../../utils/media";
 import pope from '../../utils/images/home/pope.png';
 
 const HeroContent = styled.div`
   background: url(${pope});
   background-size: cover;
   height: 100vh;
+  ${maxTablet(css`
+    background-position: 60% 0;
+  `)};
   .featured {
     background: inherit;
     width: 40%; 
@@ -14,6 +18,12 @@ const HeroContent = styled.div`
     left: 30%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    ${maxTablet(css`
+      width: 70%;
+      top: 50%;
+      left: 5%;
+      transform: translate(0%,-50%);
+    `)};
     .content {
       padding: 30px;
       background: rgba(51, 51, 51, 0.5);
@@ -30,12 +40,18 @@ const HeroContent = styled.div`
         font-weight: 500;
         margin-top: 0;
         letter-spacing: 1px;
+        ${maxTablet(css`
+          font-size: 35px;
+        `)};
       }
       .description {
         line-height: 1.15;
         margin-bottom: 20px;
         font-weight: 300;
         font-size: 21px;
+        ${maxTablet(css`
+          display: none;
+        `)};
       }
       .more-info {
         font-size: 14px;
@@ -79,6 +95,9 @@ const HeroContent = styled.div`
     z-index: 100;
     position: relative;
     height: 80px;
+    ${maxTablet(css`
+      height: 60px;
+    `)};
     button {
       width: 100%;
       height: 100%;
@@ -87,6 +106,12 @@ const HeroContent = styled.div`
       justify-content: center;
       z-index: 3;
       border: none;
+      ${maxTablet(css`
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+    `)};
       &:first-of-type {
         background: rgb(28,187,180, 0.9);
       }

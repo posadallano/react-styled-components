@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from "styled-components";
+import { maxTablet, phone } from "../../utils/media";
 
 const FooterContent = styled.footer`
   width: 100%;
@@ -11,6 +12,16 @@ const FooterContent = styled.footer`
   background-position: top;
   background-size: 5px 1px;
   background-repeat: repeat-x;
+  ${phone(css`
+    padding-bottom: 35px;
+    .nav-f.left {
+      padding-bottom: 20px;
+    }
+    .nav-f.right {
+      padding-left: 0;
+      padding-top: 10px;
+    }
+  `)};
   @media (max-width: 500px)  and (orientation: portrait){
     flex-direction: column;
     align-content: center;
@@ -32,6 +43,12 @@ const FooterContent = styled.footer`
       text-decoration: none;
       color: #333;
       font-weight: 300;
+      ${maxTablet(css`
+        font-size: 13px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      `)};
     }
     span {
       margin-left: 30px;

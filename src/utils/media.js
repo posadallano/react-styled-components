@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 export const phone = inner => css`
-  @media only screen and (min-width : ${480 / 16}em) {
+  @media only screen and (max-width : ${480 / 16}em) {
     ${inner}
   }
 `;
