@@ -6,7 +6,6 @@ const SubmitContent = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
   position: relative;
   height: 80px;
@@ -18,6 +17,7 @@ const SubmitContent = styled.div`
     height: initial;
     padding: 20px 10px;
     text-align: center;
+    flex-direction: column;
   `)};
   .cta {
     font-size: 30px;
